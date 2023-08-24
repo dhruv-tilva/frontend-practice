@@ -66,7 +66,7 @@
       <div>
         <p class="text-white font-archivo font-normal mb-6 lg:text-center">Frontend Practice - © 2023</p>
       </div>
-      <ul class="md:flex max-w-[400px] md:space-x-4 lg:mx-auto">
+      <ul class="md:flex p-0 max-w-[400px] md:space-x-4 lg:mx-auto">
         <li>
           <RouterLink
             class="text-white font-bold text-lg font-archivo focus:outline-dashed focus:outline-offset-2 hover:underline"
@@ -114,21 +114,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-#logo {
-  font-family: "DM Serif Display", serif;
-}
-
-.list {
-  font-family: 'Archivo', sans-serif;
-}
-
-.show-menu {
-  width: 100%;
-}
-
-ul {
-  padding: 0;
-}
-</style>
