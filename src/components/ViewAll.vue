@@ -9,11 +9,13 @@
         </div>
     </div>
     <div class="w-full mb-10 border-b-2 border-black md:pb-10">
-        <div class="w-full max-w-[1600px] flex justify-center flex-wrap mx-auto">
+        <div class="w-full max-w-screen-2xl flex justify-center flex-wrap mx-auto">
             <div v-for="(project, index) in filteredProjects"
                 class="w-full m-8 border-2 border-black relative sm:w-[45%] sm:m-4 lg:w-[30%] xl:w-[22.5%] hover:-translate-y-3 transition-transform duration-200 focus:outline-dashed focus:outline-offset-2 cursor-pointer">
                 <div class="border-b-2 border-black">
-                    <img class="w-full" :src="project.url" alt="">
+                    <RouterLink :to="project.path">
+                        <img class="w-full" :src="project.url" alt="">
+                    </RouterLink>
                 </div>
                 <div class="flex items-center bg-[#faebd7] py-2 px-4">
                     <div class="absolute py-1 px-3  archivo border-2 border-black top-[-7px] right-[-10px] font-bold"
@@ -33,11 +35,13 @@
         </div>
     </div>
 
-    <div class="w-full max-w-[1600px] flex justify-center flex-wrap mx-auto">
+    <div class="w-full max-w-screen-2xl flex justify-center flex-wrap mx-auto">
         <div v-for="(project, index) in retiredProjects"
             class="w-full m-8 border-2 border-black relative sm:w-[45%] sm:m-4 lg:w-[30%] xl:w-[22.5%] hover:-translate-y-3 transition-transform duration-200 focus:outline-dashed focus:outline-offset-2 cursor-pointer">
             <div class="border-b-2 border-black">
-                <img class="w-full" :src="project.url" alt="">
+                <RouterLink :to="project.path">
+                    <img class="w-full" :src="project.url" alt="">
+                </RouterLink>
             </div>
             <div class="flex items-center bg-[#faebd7] py-2 px-4">
                 <div class="absolute py-1 px-3  archivo border-2 border-black top-[-7px] right-[-10px] font-bold"

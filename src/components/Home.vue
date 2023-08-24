@@ -1,22 +1,23 @@
 <template>
     <div class="w-full bg-[#faebd7]">
-        <div class="py-12 px-4 max-w-[1200px] mx-auto md:flex items-center md:py-24 lg:px-9 xl:px-0">
+        <div class="py-12 px-4 max-w-screen-xl mx-auto md:flex items-center md:py-24 lg:px-9 xl:px-0">
             <div class="w-full md:max-w-[600px]">
-                <h2 class="dm text-[32px] leading-none font-bold text-black md:text-5xl lg:text-6xl">Become a better
+                <h2 class="font-dm text-[32px] leading-none font-bold text-black md:text-5xl lg:text-6xl">Become a better
                     frontend developer.
                 </h2>
-                <p class="archivo text-lg my-4 md:text-2xl font-normal">Take your frontend skills to the next level by
+                <p class="font-archivo text-lg my-4 md:text-2xl font-normal">Take your frontend skills to the next level by
                     recreating <strong>real websites</strong> from <strong>real companies.</strong>
                 </p>
-                <p class="archivo text-lg my-4 md:text-2xl font-normal">The perfect type of practice for developers of all
+                <p class="font-archivo text-lg my-4 md:text-2xl font-normal">The perfect type of practice for developers of
+                    all
                     skill levels. Are you up for the challenge?</p>
                 <div class="flex items-center space-x-4">
                     <RouterLink
-                        class="archivo py-3 px-4 bg-white no-underline border-2 border-black hover:bg-black hover:text-white transition-colors duration-200 font-semibold"
+                        class="font-archivo py-3 px-4 bg-white no-underline border-2 border-black hover:bg-black hover:text-white transition-colors duration-200 font-semibold"
                         to="/projects">View
                         Projects</RouterLink>
                     <RouterLink
-                        class="archivo py-3 px-4 bg-[#faebd7] no-underline border-2 border-black hover:bg-black hover:text-white transition-colors duration-200 font-semibold"
+                        class="font-archivo py-3 px-4 bg-[#faebd7] no-underline border-2 border-black hover:bg-black hover:text-white transition-colors duration-200 font-semibold"
                         to="/">Learn More
                     </RouterLink>
                 </div>
@@ -29,10 +30,12 @@
 
     <div class="w-full px-4 py-12">
         <div class="w-full">
-            <h2 class="dm text-[27px] leading-none mb-10 font-bold text-center max-w-[650px] mx-auto md:text-4xl">Frontend
+            <h2 class="font-dm text-[27px] leading-none mb-10 font-bold text-center max-w-[650px] mx-auto md:text-4xl">
+                Frontend
                 Practice provides you with the inspiration and resources to create beautiful websites.
             </h2>
-            <p class="archivo text-2xl text-center mb-10 max-w-[450px] mx-auto md:text-[27px]">Here are some ways you can
+            <p class="font-archivo text-2xl text-center mb-10 max-w-[450px] mx-auto md:text-[27px]">Here are some ways you
+                can
                 benefit from using our platform:</p>
         </div>
         <div
@@ -44,25 +47,17 @@
             </div>
         </div>
         <div class="flex flex-col items-center">
-            <h2 class="text-3xl text-center dm font-bold my-8 leading-none max-w-[450px] mx-auto md:mt-20">Ready to become a
+            <h2 class="text-3xl text-center font-dm font-bold my-8 leading-none max-w-[450px] mx-auto md:mt-20">Ready to
+                become a
                 better frontend developer?
             </h2>
             <RouterLink
-                class="inline-block archivo py-3 px-4 bg-white no-underline border-2 border-black hover:bg-black hover:text-white transition-colors duration-200 font-semibold"
+                class="inline-block font-archivo py-3 px-4 bg-white no-underline border-2 border-black hover:bg-black hover:text-white transition-colors duration-200 font-semibold"
                 to="/projects">Get Started</RouterLink>
         </div>
     </div>
 </template>
 
-<style scoped>
-.dm {
-    font-family: "DM Serif Display", serif;
-}
-
-.archivo {
-    font-family: 'Archivo', sans-serif;
-}
-</style>
 
 <script>
 import { RouterLink } from 'vue-router';
