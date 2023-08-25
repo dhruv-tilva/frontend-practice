@@ -16,39 +16,40 @@
       </div>
       <div class="relative z-[1] md:hidden">
         <div class="flex items-center">
-          <i @click="toggleMenu = !toggleMenu" class="fa-solid text-3xl focus:outline-dashed focus:outline-offset-2"
+          <i @click="toggleMenu = !toggleMenu"
+            class="fa-solid text-3xl cursor-pointer focus:outline-dashed focus:outline-offset-2"
             :class="{ 'fa-bars': toggleMenu, 'fa-xmark': !toggleMenu }"></i>
         </div>
         <ul
           class="list-none fixed top-0 bg-white right-[-2px] bottom-0 overflow-hidden z-[-1] border-l-2 border-black space-y-4 max-w-[300px] transition-width duration-300 ease-in-out delay-0"
           :class="{ 'w-full': !toggleMenu }, { 'w-[0%]': toggleMenu }">
           <div class="p-6">
-            <li>
+            <li @click="toggleMenu = true">
               <RouterLink
                 class="font-bold text-2xl font-archivo hover:underline focus:outline-dashed focus:outline-offset-2"
                 to="/">Home</RouterLink>
             </li>
-            <li>
+            <li @click="toggleMenu = true">
               <RouterLink
                 class="font-bold text-2xl font-archivo hover:underline focus:outline-dashed focus:outline-offset-2"
                 to="/projects">Projects</RouterLink>
             </li>
-            <li>
+            <li @click="toggleMenu = true">
               <RouterLink
                 class="font-bold text-2xl font-archivo hover:underline focus:outline-dashed focus:outline-offset-2"
                 to="/blog">Blog</RouterLink>
             </li>
-            <li>
+            <li @click="toggleMenu = true">
               <RouterLink
                 class="font-bold text-2xl font-archivo hover:underline focus:outline-dashed focus:outline-offset-2"
                 to="/faq">FAQ</RouterLink>
             </li>
-            <li>
+            <li @click="toggleMenu = true">
               <RouterLink
                 class="font-bold text-2xl font-archivo hover:underline focus:outline-dashed focus:outline-offset-2"
                 to="/contact">Contact</RouterLink>
             </li>
-            <li>
+            <li @click="toggleMenu = true">
               <RouterLink
                 class="font-bold text-2xl font-archivo hover:underline focus:outline-dashed focus:outline-offset-2"
                 to="/newsletter">Newsletter</RouterLink>
