@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-
+    <!-- this is new branch -->
     <div class="w-full px-4 py-12">
         <div class="w-full">
             <h2 class="font-dm text-[27px] leading-none mb-10 font-bold text-center max-w-[650px] mx-auto md:text-4xl">
