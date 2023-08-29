@@ -2,51 +2,55 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from './components/home.vue';
-import Projects from './components/projects.vue';
-import Contact from './components/contact.vue';
-import Faq from "./components/faq.vue"
-import Blog from "./components/blog.vue"
+import Home from './pages/home.vue'
+import Project from './pages/project.vue'
+import Blog from "./pages/blog.vue"
+import BlogWhereHost from "./pages/blog-where-host.vue"
+import BlogPortfolio from './pages/blog-portfolio.vue'
+import BlogFrontend from './pages/blog-frontend.vue'
+import Contact from './pages/contact.vue';
+import Faq from "./pages/faq.vue"
+
 import Newsletter from "./components/newsletter.vue"
 import NotFound from './components/not-found.vue'
-import Ableton from "./components/ableton.vue"
-import Abstract from './components/abstract.vue';
-import BackstageTalks from './components/bakstage-talks.vue';
-import Basic from './components/basic.vue';
-import Bonsai from "./components/bonsai.vue"
-import CanalStreetMarket from "./components/canal-street-market.vue"
-import DeplaceMaison from "./components/deplace-maison.vue"
-import FigmaMerch from './components/figma-merch.vue'
-import GoDaddy from "./components/go-daddy.vue"
-import Lobe from './components/lobe.vue';
-import Monogram from './components/monogram.vue';
-import Monstercat from './components/monstercat.vue';
-import Nintendo from "./components/nintendo.vue"
-import OhStudio from "./components/oh-studio.vue"
-import Podia from "./components/podia.vue"
-import Pulse from './components/pulse.vue'
-import Qrates from "./components/qrates.vue"
-import Starbuks from "./components/star-buks.vue"
-import Stark from './components/starc.vue'
+import Ableton from "./pages/project-ableton.vue"
+import Abstract from './pages/project-abstract.vue';
+import BackstageTalks from './pages/project-bakstage-talks.vue';
+import Basic from './pages/project-basic.vue';
+import Bonsai from "./pages/project-bonsai.vue"
+import CanalStreetMarket from "./pages/project-canal-street-market.vue"
+import DeplaceMaison from "./pages/project-deplace-maison.vue"
+import FigmaMerch from './pages/project-figma-merch.vue'
+import GoDaddy from "./pages/project-go-daddy.vue"
+import Lobe from './pages/project-lobe.vue';
+import Monogram from './pages/project-monogram.vue';
+import Monstercat from './pages/project-monstercat.vue';
+import Nintendo from "./pages/project-nintendo.vue"
+import OhStudio from "./pages/project-oh-studio.vue"
+import Podia from "./pages/project-podia.vue"
+import Pulse from './pages/project-pulse.vue'
+import Qrates from "./pages/project-qrates.vue"
+import Starbuks from "./pages/project-star-buks.vue"
+import Stark from './pages/project-starc.vue'
 
-import Ecwid from "./components/ecwid.vue"
-import Grasshopper from "./components/grass-hopper.vue"
-import Instrument from "./components/instrument.vue"
-import RedSquare from './components/red-square.vue'
-import ShopifyDev from "./components/shopify-dev.vue"
-import Sketch from "./components/sketch.vue"
-import Trello from './components/trello.vue'
+import Ecwid from "./pages/project-ecwid.vue"
+import Grasshopper from "./pages/project-grass-hopper.vue"
+import Instrument from "./pages/project-instrument.vue"
+import RedSquare from './pages/project-red-square.vue'
+import ShopifyDev from "./pages/project-shopify-dev.vue"
+import Sketch from "./pages/project-sketch.vue"
+import Trello from './pages/project-trello.vue'
 
-import Blog1 from "./components/blog1.vue"
-import Blog2 from "./components/blog2.vue"
-import Blog3 from "./components/blog3.vue"
+// import Blog1 from "./pages/project-blog1.vue"
+// import Blog2 from "./pages/project-blog2.vue"
+// import Blog3 from "./pages/project-blog3.vue"
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: Home },
         { path: '/blog', component: Blog },
         { path: '/contact', component: Contact },
-        { path: '/projects', component: Projects },
+        { path: '/projects', component: Project },
         { path: '/projects/ableton', component: Ableton },
         { path: '/faq', component: Faq },
         { path: '/newsletter', component: Newsletter },
@@ -76,9 +80,9 @@ const router = createRouter({
         { path: '/projects/retire/shopify-dev', component: ShopifyDev },
         { path: '/projects/retire/sketch', component: Sketch },
         { path: '/projects/retire/trello', component: Trello },
-        { path: '/blog/where-to-host-your-frontend-projects', component: Blog1 },
-        { path: '/blog/build-your-portfolio-faster', component: Blog2 },
-        { path: '/blog/frontend-practice-and-how-it-works', component: Blog3 },
+        { path: '/blog/where-to-host-your-frontend-projects', component: BlogWhereHost },
+        { path: '/blog/build-your-portfolio-faster', component: BlogPortfolio },
+        { path: '/blog/frontend-practice-and-how-it-works', component: BlogFrontend },
     ]
 })
 import App from './App.vue'
