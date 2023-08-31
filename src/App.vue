@@ -1,5 +1,7 @@
 <template>
-  <nav class="px-4 sticky top-0 z-10 w-full border-b-2 border-black md:px-9 bg-white">
+  <RouterView></RouterView> <!-- <Project /> -->
+
+  <!-- <nav class="px-4 sticky top-0 z-10 w-full border-b-2 border-black md:px-9 bg-white">
     <div class="max-w-screen-xl flex justify-between mx-auto py-2 items-center">
       <div>
         <RouterLink to="/" @click.prevent id="logo"
@@ -101,17 +103,20 @@
         </li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
 </template>
 
 <script>
 // import { RouterLink, RouterView } from 'vue-router';
-
+import { RouterView } from 'vue-router';
+import Home from './pages/home.vue'
+import Project from './pages/project.vue';
 export default {
   data() {
     return {
       toggleMenu: true,
     };
   },
+  components: { Home, Project, RouterView }
 };
 </script>
